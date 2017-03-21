@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="UserMacros">
+    <FFmpeg_Bin>$(MSBuildThisFileDirectory)\bin\$(Platform)\</FFmpeg_Bin>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(FFmpeg_Bin)avcodec-57.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(FFmpeg_Bin)avdevice-57.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(FFmpeg_Bin)avfilter-6.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(FFmpeg_Bin)avformat-57.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(FFmpeg_Bin)avutil-55.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(FFmpeg_Bin)postproc-54.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(FFmpeg_Bin)swresample-2.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(FFmpeg_Bin)swscale-4.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)\lib\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

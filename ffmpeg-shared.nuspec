@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FFmpeg.Shared</id>
+    <version>3.2.4.0</version>
+    <authors>FFmpeg</authors>
+    <owners>Matthias C. M. Troffaes</owners>
+    <projectUrl>https://ffmpeg.org/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package contains the header and library files for FFmpeg, based on https://ffmpeg.zeranoe.com/builds/</description>
+    <copyright>Copyright 2017</copyright>
+    <tags>native</tags>
+  </metadata>
+  <files>
+    <file src="ffmpeg-3.2.4-win64-dev\include\**" target="build\native\include" />
+    <file src="ffmpeg-3.2.4-win64-dev\lib\*.lib" target="build\native\lib\x64" />
+    <file src="ffmpeg-3.2.4-win64-shared\bin\*.dll" target="build\native\bin\x64"/>
+    <file src="ffmpeg-3.2.4-win32-dev\lib\*.lib" target="build\native\lib\x86" />
+    <file src="ffmpeg-3.2.4-win32-shared\bin\*.dll" target="build\native\bin\x86"/>
+  </files>
+</package>
