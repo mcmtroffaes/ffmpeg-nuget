@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>FFmpeg.Shared</id>
-    <version>20170317.0</version>
+    <id>FFmpeg.Nightly</id>
+    <version>20170317.0.0</version>
     <authors>FFmpeg</authors>
     <owners>Matthias C. M. Troffaes</owners>
     <projectUrl>https://ffmpeg.org/</projectUrl>
@@ -12,7 +12,7 @@
     <tags>native</tags>
   </metadata>
   <files>
-    <file src="ffmpeg-shared.targets" target="build\native" />
+    <file src="FFmpeg.Nightly.targets" target="build\native" />
     <file src="ffmpeg-20170317-9e6b269-win32-dev\include\**" target="build\native\include" />
     <file src="ffmpeg-20170317-9e6b269-win32-dev\lib\*.lib" target="build\native\lib\x86" />
     <file src="ffmpeg-20170317-9e6b269-win64-dev\lib\*.lib" target="build\native\lib\x64" />
