@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>FFmpeg.Shared</id>
-    <version>3.2.4.0</version>
+    <version>20170317.0</version>
     <authors>FFmpeg</authors>
     <owners>Matthias C. M. Troffaes</owners>
     <projectUrl>https://ffmpeg.org/</projectUrl>
@@ -12,10 +12,11 @@
     <tags>native</tags>
   </metadata>
   <files>
-    <file src="ffmpeg-3.2.4-win64-dev\include\**" target="build\native\include" />
-    <file src="ffmpeg-3.2.4-win64-dev\lib\*.lib" target="build\native\lib\x64" />
-    <file src="ffmpeg-3.2.4-win64-shared\bin\*.dll" target="build\native\bin\x64"/>
-    <file src="ffmpeg-3.2.4-win32-dev\lib\*.lib" target="build\native\lib\x86" />
-    <file src="ffmpeg-3.2.4-win32-shared\bin\*.dll" target="build\native\bin\x86"/>
+    <file src="ffmpeg-shared.targets" target="build\native" />
+    <file src="ffmpeg-20170317-9e6b269-win32-dev\include\**" target="build\native\include" />
+    <file src="ffmpeg-20170317-9e6b269-win32-dev\lib\*.lib" target="build\native\lib\x86" />
+    <file src="ffmpeg-20170317-9e6b269-win64-dev\lib\*.lib" target="build\native\lib\x64" />
+    <file src="ffmpeg-20170317-9e6b269-win32-shared\bin\*.dll" target="build\native\bin\x86" />
+    <file src="ffmpeg-20170317-9e6b269-win64-shared\bin\*.dll" target="build\native\bin\x64" />
   </files>
 </package>
