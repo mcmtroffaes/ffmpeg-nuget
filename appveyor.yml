@@ -1,0 +1,8 @@
+version: 1.0.{build}
+build:
+  verbosity: minimal
+build_script:
+  - ps: .\build.ps1
+  - nuget pack FFmpeg.Nightly.nuspec
+artifacts:
+  - path: '*.nupkg'
