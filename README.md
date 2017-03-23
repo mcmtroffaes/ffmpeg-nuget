@@ -1,16 +1,16 @@
 # ffmpeg-nuget
 
-A nuget package for ffmpeg.
+A nuget package for FFmpeg based on the [official builds](https://ffmpeg.zeranoe.com/builds/).
 
 ## Requirements
 
-* [FFmpeg](https://ffmpeg.zeranoe.com/builds/)
 * [Nuget](https://www.nuget.org/)
 
 ## Usage
 
-  * Extract the FFmpeg dev and shared builds, 32 bit and 64 bit.
-  * Create nuget package, and add the package to your local nuget package feed.
+  * Use ``install.ps1`` to download and extract the relevant FFmpeg dev and shared builds for both 32 bit and 64 bit.
+  * Use ``build.ps1`` to regenerate the lib files using Visual Studio 14.0 tools.
+  * Use ``nuget pack FFmpeg.Nightly.nuspec`` to create the nuget package.
 
 ## License
 
