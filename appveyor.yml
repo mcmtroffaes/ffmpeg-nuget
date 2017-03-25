@@ -10,6 +10,20 @@ build_script:
   - msbuild ffmpeg-nuget.sln /p:Configuration=Release /p:Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
   - msbuild ffmpeg-nuget.sln /p:Configuration=Debug /p:Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
   - msbuild ffmpeg-nuget.sln /p:Configuration=Release /p:Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+test_script:
+  - ps: |
+      Push-Location Release
+      ..\test.ps1
+      Pop-Location
+      Push-Location Debug
+      ..\test.ps1
+      Pop-Location
+      Push-Location x64\Release
+      ..\..\test.ps1
+      Pop-Location
+      Push-Location x64\Debug
+      ..\..\test.ps1
+      Pop-Location
 artifacts:
   - path: '*.nupkg'
 deploy:
