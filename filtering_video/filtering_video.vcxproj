@@ -111,6 +111,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\examples\filtering_video.c" />
+    <ClCompile Include="..\usleep.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

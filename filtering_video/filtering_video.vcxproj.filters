@@ -18,6 +18,9 @@
     <ClCompile Include="..\examples\filtering_video.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\usleep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
