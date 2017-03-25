@@ -4,6 +4,7 @@ install:
 build_script:
   - ps: .\build.ps1
   - nuget pack FFmpeg.Nightly.nuspec
+  - msbuild ffmpeg-nuget.sln /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 artifacts:
   - path: '*.nupkg'
 deploy:
