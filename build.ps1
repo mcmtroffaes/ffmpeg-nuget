@@ -5,13 +5,11 @@ Foreach ($file in $files32) {
   $defname = $file.FullName
   $pos = $defname.LastIndexOf("-")
   $libname = "$($defname.Substring(0, $pos)).lib"
-  Echo "Regenerating $libname..."
-  & "$lib" /def:"$defname" /out:"$libname" /machine:x86
+  & "$lib" /def:"$defname" /out:"$libname" /machine:x86 /nologo
 }
 Foreach ($file in $files64) {
   $defname = $file.FullName
   $pos = $defname.LastIndexOf("-")
   $libname = "$($defname.Substring(0, $pos)).lib"
-  Echo "Regenerating $libname..."
-  & "$lib" /def:"$defname" /out:"$libname" /machine:x64
+  & "$lib" /def:"$defname" /out:"$libname" /machine:x64 /nologo
 }
