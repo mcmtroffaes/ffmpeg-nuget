@@ -6,5 +6,6 @@ ffmpeg-*-win*-dev/
 ffmpeg-*-win*-shared/
 .vs/
 packages/
+localfeed/
 x64/
 Debug/
