@@ -18,6 +18,9 @@
     <ClCompile Include="..\examples\http_multiclient.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\fork.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
