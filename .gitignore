@@ -1,1 +1,8 @@
 *.nupkg
+*.VC.db
+*.zip
+ffmpeg-*-win*-dev/
+ffmpeg-*-win*-shared/
+.vs/
+packages/
+x64/
