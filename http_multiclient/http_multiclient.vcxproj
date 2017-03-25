@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8FA95A04-B9F1-4CF8-9B76-2D454A7FA4B9}</ProjectGuid>
-    <RootNamespace>demuxing_decoding</RootNamespace>
+    <ProjectGuid>{6A499869-816F-499C-B8AF-4D2439AADA36}</ProjectGuid>
+    <RootNamespace>http_multiclient</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\demuxing_decoding.c" />
+    <ClCompile Include="..\examples\http_multiclient.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

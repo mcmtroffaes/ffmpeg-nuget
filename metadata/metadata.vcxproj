@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8FA95A04-B9F1-4CF8-9B76-2D454A7FA4B9}</ProjectGuid>
-    <RootNamespace>demuxing_decoding</RootNamespace>
+    <ProjectGuid>{16B391F6-5E63-4BDC-B896-F552270318B8}</ProjectGuid>
+    <RootNamespace>metadata</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\demuxing_decoding.c" />
+    <ClCompile Include="..\examples\metadata.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

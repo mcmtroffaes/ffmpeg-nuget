@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8FA95A04-B9F1-4CF8-9B76-2D454A7FA4B9}</ProjectGuid>
-    <RootNamespace>demuxing_decoding</RootNamespace>
+    <ProjectGuid>{2A465EE5-8CD0-4D9E-8C5D-DEC952E80996}</ProjectGuid>
+    <RootNamespace>scaling_video</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\demuxing_decoding.c" />
+    <ClCompile Include="..\examples\scaling_video.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
