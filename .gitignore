@@ -7,3 +7,4 @@ ffmpeg-*-win*-shared/
 .vs/
 packages/
 x64/
+Debug/
