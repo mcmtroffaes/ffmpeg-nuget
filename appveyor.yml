@@ -25,7 +25,7 @@ test_script:
       ..\..\test.ps1
       Pop-Location
 after_test:
-  - 7z a testresults.zip Release\test.* Debug\test.* x64\Release\test.* x64\Debug\test.*
+  - 7z a testresults.zip Release\test*.* Debug\test*.* x64\Release\test*.* x64\Debug\test*.*
 artifacts:
   - path: '*.nupkg'
   - path: testresults.zip
