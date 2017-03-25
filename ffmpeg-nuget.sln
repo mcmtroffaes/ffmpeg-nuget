@@ -5,6 +5,21 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ffmpeg-nuget", "ffmpeg-nuget.vcxproj", "{5DD9F89C-AF26-410E-A58F-1631999818BF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "avio_dir_cmd", "avio_dir_cmd\avio_dir_cmd.vcxproj", "{9DFAB73B-D545-4E62-B589-3C7493E6FC16}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5DD9F89C-AF26-410E-A58F-1631999818BF} = {5DD9F89C-AF26-410E-A58F-1631999818BF}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "avio_reading", "avio_reading\avio_reading.vcxproj", "{10FC0A71-99DA-45EA-87A3-9B0B298F7BE3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5DD9F89C-AF26-410E-A58F-1631999818BF} = {5DD9F89C-AF26-410E-A58F-1631999818BF}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "decoding_encoding", "decoding_encoding\decoding_encoding.vcxproj", "{2E0A4AB5-0DC4-400F-8F87-BDA3987B2E90}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5DD9F89C-AF26-410E-A58F-1631999818BF} = {5DD9F89C-AF26-410E-A58F-1631999818BF}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +36,30 @@ Global
 		{5DD9F89C-AF26-410E-A58F-1631999818BF}.Release|x64.Build.0 = Release|x64
 		{5DD9F89C-AF26-410E-A58F-1631999818BF}.Release|x86.ActiveCfg = Release|Win32
 		{5DD9F89C-AF26-410E-A58F-1631999818BF}.Release|x86.Build.0 = Release|Win32
+		{9DFAB73B-D545-4E62-B589-3C7493E6FC16}.Debug|x64.ActiveCfg = Debug|x64
+		{9DFAB73B-D545-4E62-B589-3C7493E6FC16}.Debug|x64.Build.0 = Debug|x64
+		{9DFAB73B-D545-4E62-B589-3C7493E6FC16}.Debug|x86.ActiveCfg = Debug|Win32
+		{9DFAB73B-D545-4E62-B589-3C7493E6FC16}.Debug|x86.Build.0 = Debug|Win32
+		{9DFAB73B-D545-4E62-B589-3C7493E6FC16}.Release|x64.ActiveCfg = Release|x64
+		{9DFAB73B-D545-4E62-B589-3C7493E6FC16}.Release|x64.Build.0 = Release|x64
+		{9DFAB73B-D545-4E62-B589-3C7493E6FC16}.Release|x86.ActiveCfg = Release|Win32
+		{9DFAB73B-D545-4E62-B589-3C7493E6FC16}.Release|x86.Build.0 = Release|Win32
+		{10FC0A71-99DA-45EA-87A3-9B0B298F7BE3}.Debug|x64.ActiveCfg = Debug|x64
+		{10FC0A71-99DA-45EA-87A3-9B0B298F7BE3}.Debug|x64.Build.0 = Debug|x64
+		{10FC0A71-99DA-45EA-87A3-9B0B298F7BE3}.Debug|x86.ActiveCfg = Debug|Win32
+		{10FC0A71-99DA-45EA-87A3-9B0B298F7BE3}.Debug|x86.Build.0 = Debug|Win32
+		{10FC0A71-99DA-45EA-87A3-9B0B298F7BE3}.Release|x64.ActiveCfg = Release|x64
+		{10FC0A71-99DA-45EA-87A3-9B0B298F7BE3}.Release|x64.Build.0 = Release|x64
+		{10FC0A71-99DA-45EA-87A3-9B0B298F7BE3}.Release|x86.ActiveCfg = Release|Win32
+		{10FC0A71-99DA-45EA-87A3-9B0B298F7BE3}.Release|x86.Build.0 = Release|Win32
+		{2E0A4AB5-0DC4-400F-8F87-BDA3987B2E90}.Debug|x64.ActiveCfg = Debug|x64
+		{2E0A4AB5-0DC4-400F-8F87-BDA3987B2E90}.Debug|x64.Build.0 = Debug|x64
+		{2E0A4AB5-0DC4-400F-8F87-BDA3987B2E90}.Debug|x86.ActiveCfg = Debug|Win32
+		{2E0A4AB5-0DC4-400F-8F87-BDA3987B2E90}.Debug|x86.Build.0 = Debug|Win32
+		{2E0A4AB5-0DC4-400F-8F87-BDA3987B2E90}.Release|x64.ActiveCfg = Release|x64
+		{2E0A4AB5-0DC4-400F-8F87-BDA3987B2E90}.Release|x64.Build.0 = Release|x64
+		{2E0A4AB5-0DC4-400F-8F87-BDA3987B2E90}.Release|x86.ActiveCfg = Release|Win32
+		{2E0A4AB5-0DC4-400F-8F87-BDA3987B2E90}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
