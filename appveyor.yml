@@ -6,10 +6,10 @@ build_script:
   - nuget pack FFmpeg.Nightly.nuspec
   - ps: Get-ChildItem . *.nupkg | foreach { & nuget add $_ -Source localfeed }
   - nuget restore -Source "%cd%\localfeed"
-  - msbuild ffmpeg-nuget.sln /p:Configuration=Debug /p:Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
-  - msbuild ffmpeg-nuget.sln /p:Configuration=Release /p:Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
-  - msbuild ffmpeg-nuget.sln /p:Configuration=Debug /p:Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
-  - msbuild ffmpeg-nuget.sln /p:Configuration=Release /p:Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+  - msbuild ffmpeg-nuget.sln /p:Configuration=Debug /p:Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:minimal
+  - msbuild ffmpeg-nuget.sln /p:Configuration=Release /p:Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:minimal
+  - msbuild ffmpeg-nuget.sln /p:Configuration=Debug /p:Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:minimal
+  - msbuild ffmpeg-nuget.sln /p:Configuration=Release /p:Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /verbosity:minimal
 test_script:
   - ps: |
       Push-Location Release
@@ -24,8 +24,11 @@ test_script:
       Push-Location x64\Debug
       ..\..\test.ps1
       Pop-Location
+after_test:
+  - 7z a testresults.zip Release\test.* Debug\test.* x64\Release\test.* x64\Debug\test.*
 artifacts:
   - path: '*.nupkg'
+  - path: testresults.zip
 deploy:
   provider: NuGet
   api_key:
