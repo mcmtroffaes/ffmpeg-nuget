@@ -13,3 +13,14 @@ Expand-Archive "$dev32" -DestinationPath .
 Expand-Archive "$dev64" -DestinationPath .
 Expand-Archive "$shared32" -DestinationPath .
 Expand-Archive "$shared64" -DestinationPath .
+
+Copy-Item "$dev32\doc\examples\*.c" examples
+
+# unistd.h -> io.h (for MSVC)
+$cfiles = Get-ChildItem -Path examples\ -Filter *.c
+foreach ($file in $cfiles)
+{
+  (Get-Content $file.PSPath) |
+  Foreach-Object { $_ -replace "unistd.h", "io.h" } |
+    Set-Content $file.PSPath
+}
