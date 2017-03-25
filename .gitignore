@@ -1,5 +1,6 @@
 *.nupkg
 *.VC.db
+*.VC.VC.opendb
 *.zip
 ffmpeg-*-win*-dev/
 ffmpeg-*-win*-shared/
