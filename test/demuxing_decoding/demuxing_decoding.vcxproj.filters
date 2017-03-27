@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\demuxing_decoding.c">
+    <ClCompile Include="..\..\examples\demuxing_decoding.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

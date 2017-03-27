@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\filter_audio.c">
+    <ClCompile Include="..\..\examples\filter_audio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

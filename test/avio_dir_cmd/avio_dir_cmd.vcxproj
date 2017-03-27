@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\avio_dir_cmd.c" />
+    <ClCompile Include="..\..\examples\avio_dir_cmd.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

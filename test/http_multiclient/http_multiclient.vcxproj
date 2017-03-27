@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\http_multiclient.c" />
+    <ClCompile Include="..\..\examples\http_multiclient.c" />
     <ClCompile Include="..\fork.c" />
   </ItemGroup>
   <ItemGroup>

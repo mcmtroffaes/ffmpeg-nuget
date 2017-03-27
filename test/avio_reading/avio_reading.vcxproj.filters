@@ -18,7 +18,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\avio_reading.c">
+    <ClCompile Include="..\..\examples\avio_reading.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

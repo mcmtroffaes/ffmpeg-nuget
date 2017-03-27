@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\metadata.c">
+    <ClCompile Include="..\..\examples\metadata.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

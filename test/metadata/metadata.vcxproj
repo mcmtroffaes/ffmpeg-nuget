@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\metadata.c" />
+    <ClCompile Include="..\..\examples\metadata.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

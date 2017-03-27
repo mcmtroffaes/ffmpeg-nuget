@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\remuxing.c">
+    <ClCompile Include="..\..\examples\remuxing.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\extract_mvs.c" />
+    <ClCompile Include="..\..\examples\extract_mvs.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

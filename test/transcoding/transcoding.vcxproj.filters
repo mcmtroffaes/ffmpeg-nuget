@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\transcoding.c">
+    <ClCompile Include="..\..\examples\transcoding.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

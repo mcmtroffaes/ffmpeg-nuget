@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\transcode_aac.c" />
+    <ClCompile Include="..\..\examples\transcode_aac.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

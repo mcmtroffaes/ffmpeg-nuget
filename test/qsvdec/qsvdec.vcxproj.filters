@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\qsvdec.c">
+    <ClCompile Include="..\..\examples\qsvdec.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

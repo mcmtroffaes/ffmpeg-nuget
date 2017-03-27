@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\http_multiclient.c">
+    <ClCompile Include="..\..\examples\http_multiclient.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\fork.c">

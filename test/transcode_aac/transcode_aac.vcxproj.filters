@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\transcode_aac.c">
+    <ClCompile Include="..\..\examples\transcode_aac.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

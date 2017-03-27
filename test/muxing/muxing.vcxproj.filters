@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\muxing.c">
+    <ClCompile Include="..\..\examples\muxing.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

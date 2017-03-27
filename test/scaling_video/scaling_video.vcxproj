@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\scaling_video.c" />
+    <ClCompile Include="..\..\examples\scaling_video.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

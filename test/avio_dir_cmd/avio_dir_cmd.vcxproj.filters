@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\avio_dir_cmd.c">
+    <ClCompile Include="..\..\examples\avio_dir_cmd.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

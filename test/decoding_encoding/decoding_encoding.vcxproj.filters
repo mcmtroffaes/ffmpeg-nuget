@@ -18,7 +18,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\decoding_encoding.c">
+    <ClCompile Include="..\..\examples\decoding_encoding.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\filtering_audio.c" />
+    <ClCompile Include="..\..\examples\filtering_audio.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\filtering_video.c">
+    <ClCompile Include="..\..\examples\filtering_video.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\usleep.c">

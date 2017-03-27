@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\demuxing_decoding.c" />
+    <ClCompile Include="..\..\examples\demuxing_decoding.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

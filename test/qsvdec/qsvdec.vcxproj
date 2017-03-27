@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\examples\qsvdec.c" />
+    <ClCompile Include="..\..\examples\qsvdec.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
