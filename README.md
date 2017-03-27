@@ -2,6 +2,8 @@
 
 A nuget package for FFmpeg based on the [official builds](https://ffmpeg.zeranoe.com/builds/).
 
+[![Build status](https://ci.appveyor.com/api/projects/status/vcsn0fpr5s1j6p2y/branch/master?svg=true)](https://ci.appveyor.com/project/mcmtroffaes/ffmpeg-nuget/branch/master)
+
 ## Requirements
 
 * [Nuget](https://www.nuget.org/)
