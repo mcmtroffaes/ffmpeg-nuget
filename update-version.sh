@@ -17,3 +17,5 @@ echo "$OLD_NUGET_VERSION -> $NEW_NUGET_VERSION"
 
 find . -type f -exec sed -i "s/$OLD_VERSION/$NEW_VERSION/g" {} \;
 find . -type f -exec sed -i "s/$OLD_NUGET_VERSION/$NEW_NUGET_VERSION/g" {} \;
+
+git commit -a -m "Update ffmpeg version to $NEW_VERSION."
