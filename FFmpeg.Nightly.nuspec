@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>FFmpeg.Nightly</id>
-    <version>20170401.0.0</version>
+    <version>20170404.0.0</version>
     <authors>FFmpeg</authors>
     <owners>Matthias C. M. Troffaes</owners>
     <projectUrl>https://ffmpeg.org/</projectUrl>
@@ -13,10 +13,10 @@
   </metadata>
   <files>
     <file src="FFmpeg.Nightly.targets" target="build\native" />
-    <file src="ffmpeg-20170401-23ae3cc-win32-dev\include\**" target="build\native\include" />
-    <file src="ffmpeg-20170401-23ae3cc-win32-dev\lib\*.lib" target="build\native\lib\Win32" />
-    <file src="ffmpeg-20170401-23ae3cc-win64-dev\lib\*.lib" target="build\native\lib\x64" />
-    <file src="ffmpeg-20170401-23ae3cc-win32-shared\bin\*.dll" target="build\native\bin\Win32" />
-    <file src="ffmpeg-20170401-23ae3cc-win64-shared\bin\*.dll" target="build\native\bin\x64" />
+    <file src="ffmpeg-20170404-dc1a1b8-win32-dev\include\**" target="build\native\include" />
+    <file src="ffmpeg-20170404-dc1a1b8-win32-dev\lib\*.lib" target="build\native\lib\Win32" />
+    <file src="ffmpeg-20170404-dc1a1b8-win64-dev\lib\*.lib" target="build\native\lib\x64" />
+    <file src="ffmpeg-20170404-dc1a1b8-win32-shared\bin\*.dll" target="build\native\bin\Win32" />
+    <file src="ffmpeg-20170404-dc1a1b8-win64-shared\bin\*.dll" target="build\native\bin\x64" />
   </files>
 </package>
