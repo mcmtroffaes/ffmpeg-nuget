@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>FFmpeg.Nightly</id>
     <version>20170404.1.0</version>
@@ -11,7 +11,7 @@
     <description>Headers, import libraries, and runtime dlls for FFmpeg, based on the official FFmpeg windows builds from https://ffmpeg.zeranoe.com/builds/</description>
     <summary>Headers, import libraries, and runtime dlls for FFmpeg.</summary>
     <copyright>Copyright 2017</copyright>
-    <tags>native nativepackage ffmpeg media video audio encode decode encoding decoding codec</tags>
+    <tags>native nativepackage ffmpeg media video audio capture encode decode encoding decoding codec</tags>
     <iconUrl>https://ffmpeg.org/favicon.ico</iconUrl>
   </metadata>
   <files>
