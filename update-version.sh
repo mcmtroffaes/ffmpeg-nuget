@@ -29,11 +29,16 @@ fi
 
 NEW_NUGET_VERSION=${NEW_NUGET_VERSION_MAJOR}.${NEW_NUGET_VERSION_MINOR}.0
 
+OLD_GIT_VERSION=`expr "${OLD_VERSION}" : '^[0-9]*-\(.*\)'`
+NEW_GIT_VERSION=`expr "${NEW_VERSION}" : '^[0-9]*-\(.*\)'`
+
 echo "$OLD_VERSION -> $NEW_VERSION"
 echo "$OLD_NUGET_VERSION -> $NEW_NUGET_VERSION"
+echo "$OLD_GIT_VERSION -> $NEW_GIT_VERSION"
 
 find . -type f -exec sed -i "s/$OLD_VERSION/$NEW_VERSION/g" {} \;
 find . -type f -exec sed -i "s/$OLD_NUGET_VERSION/$NEW_NUGET_VERSION/g" {} \;
+sed -i "s/$OLD_GIT_VERSION/$NEW_GIT_VERSION/g" FFmpeg.Nightly.nuspec
 
 git commit -a -m "Update ffmpeg version to $NEW_VERSION."
 echo "To tag, run:"
