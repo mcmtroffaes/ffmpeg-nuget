@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>FFmpeg.Nightly</id>
-    <version>20170404.1.0</version>
+    <version>20170418.0.0</version>
     <authors>FFmpeg</authors>
     <owners>Matthias C. M. Troffaes</owners>
     <projectUrl>https://ffmpeg.org/</projectUrl>
@@ -11,16 +11,16 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Headers, import libraries, and runtime dlls for FFmpeg, based on the official FFmpeg windows builds. The binaries are from https://ffmpeg.zeranoe.com/builds/ except for the import libraries. These have been regenerated using MSVC tools to ensure support for delay loading of the DLLs. The scripts for creating this nuget package are maintained at https://github.com/mcmtroffaes/ffmpeg-nuget on GitHub.</description>
     <summary>Headers, import libraries, and runtime dlls for FFmpeg.</summary>
-    <releaseNotes>https://git.ffmpeg.org/gitweb/ffmpeg.git/log/1229007</releaseNotes>
+    <releaseNotes>https://git.ffmpeg.org/gitweb/ffmpeg.git/log/6108805</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>native nativepackage ffmpeg media video audio capture encode decode encoding decoding codec</tags>
   </metadata>
   <files>
     <file src="FFmpeg.Nightly.targets" target="build\native" />
-    <file src="ffmpeg-20170404-1229007-win32-dev\include\**" target="build\native\include" />
-    <file src="ffmpeg-20170404-1229007-win32-dev\lib\*.lib" target="build\native\lib\Win32" />
-    <file src="ffmpeg-20170404-1229007-win64-dev\lib\*.lib" target="build\native\lib\x64" />
-    <file src="ffmpeg-20170404-1229007-win32-shared\bin\*.dll" target="build\native\bin\Win32" />
-    <file src="ffmpeg-20170404-1229007-win64-shared\bin\*.dll" target="build\native\bin\x64" />
+    <file src="ffmpeg-20170418-6108805-win32-dev\include\**" target="build\native\include" />
+    <file src="ffmpeg-20170418-6108805-win32-dev\lib\*.lib" target="build\native\lib\Win32" />
+    <file src="ffmpeg-20170418-6108805-win64-dev\lib\*.lib" target="build\native\lib\x64" />
+    <file src="ffmpeg-20170418-6108805-win32-shared\bin\*.dll" target="build\native\bin\Win32" />
+    <file src="ffmpeg-20170418-6108805-win64-shared\bin\*.dll" target="build\native\bin\x64" />
   </files>
 </package>
