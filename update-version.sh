@@ -41,5 +41,4 @@ find . -type f -exec sed -i "s/$OLD_NUGET_VERSION/$NEW_NUGET_VERSION/g" {} \;
 sed -i "s/$OLD_GIT_VERSION/$NEW_GIT_VERSION/g" FFmpeg.Nightly.nuspec
 
 git commit -a -m "Update ffmpeg version to $NEW_VERSION."
-echo "To tag, run:"
-echo "    git tag -a -m \"Tagging version $NEW_NUGET_VERSION\"" $NEW_NUGET_VERSION
+git tag -a -m "Tagging version $NEW_NUGET_VERSION." $NEW_NUGET_VERSION
