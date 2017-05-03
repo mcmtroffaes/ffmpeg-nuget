@@ -20,8 +20,7 @@ All scripts for creating this nuget package are licensed under the
 conditions of the [MIT license](LICENSE.txt). For the examples in the
 [test](test) folder, see individual files for license details.
 
-For license details of FFmpeg itself, see [FFmpeg's license
-page](https://ffmpeg.org/legal.html). Note that the official windows
-FFmpeg build incorporates parts that are covered by the GPLv3, so the
-GPL applies to the entire build. In other words, if you use this nuget
-package in your application, then you must comply with the GPLv3.
+Note that the official windows FFmpeg build incorporates parts that
+are covered by the GPLv3 license. Consequently, if you use this nuget
+package in your application, then you must comply with the terms of
+the [GPLv3 license](ffmpeg-windows-build-license.txt).
