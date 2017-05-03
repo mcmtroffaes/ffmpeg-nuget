@@ -17,8 +17,8 @@ In the content/licenses folder of this nuget package, you can find:
   about how FFmpeg was compiled and what features are enabled
   (ffmpeg-windows-build-readme.txt).
 
-* A copy of the GPLv3 license (ffmpeg-windows-build-license.txt) which
-  applies to this build.
+* A copy of the GPLv3 license which applies to this build
+  (ffmpeg-windows-build-license.txt).
 
 * A copy of the license of each of the libraries used in the build
   (<library>.txt).
