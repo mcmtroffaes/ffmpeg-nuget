@@ -16,8 +16,11 @@
     <tags>ffmpeg media video audio capture encode decode encoding decoding codec native nativepackage</tags>
   </metadata>
   <files>
+    <file src="nuget-readme.txt" target="readme.txt" />
+    <file src="ffmpeg-windows-build-license.txt" target="content\licenses" />
     <file src="FFmpeg.Nightly.targets" target="build\native" />
     <file src="ffmpeg-20170503-a75ef15-win32-dev\include\**" target="build\native\include" />
+    <file src="ffmpeg-20170503-a75ef15-win32-dev\licenses\**" target="content\licenses" />
     <file src="ffmpeg-20170503-a75ef15-win32-dev\lib\*.lib" target="build\native\lib\Win32" />
     <file src="ffmpeg-20170503-a75ef15-win64-dev\lib\*.lib" target="build\native\lib\x64" />
     <file src="ffmpeg-20170503-a75ef15-win32-shared\bin\*.dll" target="build\native\bin\Win32" />
