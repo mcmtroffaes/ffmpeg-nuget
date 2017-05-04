@@ -3,13 +3,13 @@ dlls for FFmpeg, based on the official FFmpeg windows builds from
 https://ffmpeg.zeranoe.com/builds/ for use with Visual Studio.
 
 FFmpeg is a pure C project, so to use the libraries within your C++
-application you need to encompass your FFmpeg includes using extern
-"C". For more details, see https://ffmpeg.org/faq.html
+application you must encompass your FFmpeg includes using extern "C".
+Otherwise, you will experience link errors. For more details, see
+https://ffmpeg.org/faq.html
 
-Note that the official windows FFmpeg build incorporates parts that
-are covered by the GPLv3 license. Consequently, if you use this nuget
-package in your application, then you must comply with the terms of
-the GPLv3 license.
+Note that this build incorporates parts that are covered by the GPLv3
+license. Consequently, if you use this nuget package in your
+application, then you must comply with the terms of the GPLv3 license.
 
 In the content/licenses folder of this nuget package, you can find:
 
