@@ -1,6 +1,6 @@
 This nuget package contains headers, import libraries, and runtime
-dlls for FFmpeg, based on the official FFmpeg windows builds from
-https://ffmpeg.zeranoe.com/builds/ for use with Visual Studio.
+dlls for FFmpeg for use with Visual Studio. It is based on the
+official FFmpeg windows builds from https://ffmpeg.zeranoe.com/builds/
 
 FFmpeg is a pure C project, so to use the libraries within your C++
 application you must encompass your FFmpeg includes using extern "C".
