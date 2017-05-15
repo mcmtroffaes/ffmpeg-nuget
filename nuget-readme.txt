@@ -11,7 +11,7 @@ Note that this build incorporates parts that are covered by the GPLv3
 license. Consequently, if you use this nuget package in your
 application, then you must comply with the terms of the GPLv3 license.
 
-In the content/licenses folder of this nuget package, you can find:
+In the build\native\share\doc folder of this nuget package, you can find:
 
 * The readme included with the official windows build for details
   about how FFmpeg was compiled and what features are enabled
