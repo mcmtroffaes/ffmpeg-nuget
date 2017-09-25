@@ -1,4 +1,4 @@
-$ffmpeg = "ffmpeg-20170915-6743351"
+$ffmpeg = "ffmpeg-20170921-183fd30"
 $dev32 = "$ffmpeg-win32-dev"
 $dev64 = "$ffmpeg-win64-dev"
 $shared32 = "$ffmpeg-win32-shared"
