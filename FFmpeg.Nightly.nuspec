@@ -19,7 +19,7 @@
     <file src="ffmpeg-windows-build-license.txt" target="build\native\share\doc" />
     <file src="FFmpeg.Nightly.targets" target="build\native" />
     <file src="ffmpeg-20171016-7480f23-win32-dev\include\**" target="build\native\include" />
-    <file src="ffmpeg-20171016-7480f23-win32-dev\licenses\**" target="build\native\share\doc" />
+    <file src="ffmpeg-20171016-7480f23-win32-dev\LICENSE.txt" target="build\native\share\doc" />
     <file src="ffmpeg-20171016-7480f23-win32-dev\README.txt" target="build\native\share\doc\ffmpeg-windows-build-readme.txt" />
     <file src="ffmpeg-20171016-7480f23-win32-dev\lib\*.lib" target="build\native\lib\Win32" />
     <file src="ffmpeg-20171016-7480f23-win64-dev\lib\*.lib" target="build\native\lib\x64" />

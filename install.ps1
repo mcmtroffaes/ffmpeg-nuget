@@ -14,7 +14,7 @@ if (!(Test-Path $dev64)) { Expand-Archive "$dev64.zip" -DestinationPath . }
 if (!(Test-Path $shared32)) { Expand-Archive "$shared32.zip" -DestinationPath . }
 if (!(Test-Path $shared64)) { Expand-Archive "$shared64.zip" -DestinationPath . }
 
-Copy-Item "$dev32\doc\examples\*.c" examples
+Copy-Item "$dev32\examples\*.c" examples
 
 # unistd.h -> io.h (for MSVC)
 $cfiles = Get-ChildItem -Path examples\ -Filter *.c
