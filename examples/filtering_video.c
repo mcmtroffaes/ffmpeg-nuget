@@ -28,7 +28,7 @@
  */
 
 #define _XOPEN_SOURCE 600 /* for usleep */
-#include <unistd.h>
+#include <io.h>
 
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
