@@ -20,9 +20,6 @@ In the build\native\share\doc folder of this nuget package, you can find:
 * A copy of the GPLv3 license which applies to this build
   (ffmpeg-windows-build-license.txt).
 
-* A copy of the license of each of the libraries used in the build
-  (<library>.txt).
-
 For more information on FFmpeg's license, see:
 
 * https://git.ffmpeg.org/gitweb/ffmpeg.git/blob/72c3d9a:/LICENSE.md

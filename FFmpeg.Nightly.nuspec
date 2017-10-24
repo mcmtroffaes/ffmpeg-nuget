@@ -16,10 +16,9 @@
   </metadata>
   <files>
     <file src="nuget-readme.txt" target="readme.txt" />
-    <file src="ffmpeg-windows-build-license.txt" target="build\native\share\doc" />
     <file src="FFmpeg.Nightly.targets" target="build\native" />
     <file src="ffmpeg-20171022-72c3d9a-win32-dev\include\**" target="build\native\include" />
-    <file src="ffmpeg-20171022-72c3d9a-win32-dev\LICENSE.txt" target="build\native\share\doc" />
+    <file src="ffmpeg-20171022-72c3d9a-win32-dev\LICENSE.txt" target="build\native\share\doc\ffmpeg-windows-build-license.txt" />
     <file src="ffmpeg-20171022-72c3d9a-win32-dev\README.txt" target="build\native\share\doc\ffmpeg-windows-build-readme.txt" />
     <file src="ffmpeg-20171022-72c3d9a-win32-dev\lib\*.lib" target="build\native\lib\Win32" />
     <file src="ffmpeg-20171022-72c3d9a-win64-dev\lib\*.lib" target="build\native\lib\x64" />

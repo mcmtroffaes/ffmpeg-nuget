@@ -23,4 +23,5 @@ conditions of the [MIT license](LICENSE.txt). For the examples in the
 Note that the official FFmpeg windows build incorporates parts that
 are covered by the GPLv3 license. Consequently, if you use this nuget
 package in your application, then you must comply with the terms of
-the [GPLv3 license](ffmpeg-windows-build-license.txt).
+the [GPLv3 license](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
