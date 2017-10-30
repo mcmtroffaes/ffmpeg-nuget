@@ -4,10 +4,10 @@ $dev64 = "$ffmpeg-win64-dev"
 $shared32 = "$ffmpeg-win32-shared"
 $shared64 = "$ffmpeg-win64-shared"
 
-if (!(Test-Path "$dev32.zip")) { Start-FileDownload "https://ffmpeg.zeranoe.com/builds/win32/dev/$dev32.zip" }
-if (!(Test-Path "$dev64.zip")) { Start-FileDownload "https://ffmpeg.zeranoe.com/builds/win64/dev/$dev64.zip" }
-if (!(Test-Path "$shared32.zip")) { Start-FileDownload "https://ffmpeg.zeranoe.com/builds/win32/shared/$shared32.zip" }
-if (!(Test-Path "$shared64.zip")) { Start-FileDownload "https://ffmpeg.zeranoe.com/builds/win64/shared/$shared64.zip" }
+if (!(Test-Path "$dev32.zip")) { Start-FileDownload "http://ffmpeg.zeranoe.com/builds/win32/dev/$dev32.zip" }
+if (!(Test-Path "$dev64.zip")) { Start-FileDownload "http://ffmpeg.zeranoe.com/builds/win64/dev/$dev64.zip" }
+if (!(Test-Path "$shared32.zip")) { Start-FileDownload "http://ffmpeg.zeranoe.com/builds/win32/shared/$shared32.zip" }
+if (!(Test-Path "$shared64.zip")) { Start-FileDownload "http://ffmpeg.zeranoe.com/builds/win64/shared/$shared64.zip" }
 
 if (!(Test-Path $dev32)) { Expand-Archive "$dev32.zip" -DestinationPath . }
 if (!(Test-Path $dev64)) { Expand-Archive "$dev64.zip" -DestinationPath . }
