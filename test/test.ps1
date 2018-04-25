@@ -8,3 +8,4 @@ foreach ($format in $formats) {
   Echo "end test: muxing to $outfile..."
   if (!(Test-Path $outfile)) { $host.SetShouldExit(1) }
 }
+Get-ChildItem . | Select Name
