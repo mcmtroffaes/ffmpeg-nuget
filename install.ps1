@@ -24,8 +24,3 @@ foreach ($file in $cfiles)
   Foreach-Object { $_ -replace "unistd.h", "io.h" } |
     Set-Content $file.PSPath
 }
-
-# change log level for muxing (so test only writes to stderr on actual error)
-(Get-Content examples\muxing.c) |
-Foreach-Object {$_ -replace "if (argc", "av_log_set_level(AV_LOG_ERROR); if (argc"} |
-  Set-Content examples\muxing.c
