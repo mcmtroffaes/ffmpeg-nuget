@@ -3,14 +3,8 @@ foreach ($format in $formats) {
   $outfile = "test-muxing.$format"
   Echo "begin test: muxing to $outfile..."
   # muxing.exe writes to stderr, which powershell considers as a failure
-  # so embed in try catch to fix this
-  Try
-  {
-    & .\muxing.exe $outfile 2>&1 | out-null
-  }
-  Catch
-  {
-  }
+  # so execute with cmd and redirect stderr within cmd to hide from powershell
+  cmd /c ".\muxing.exe $outfile > nul 2>&1"
   Echo "end test: muxing to $outfile..."
   if (!(Test-Path $outfile)) { $host.SetShouldExit(1) }
 }
