@@ -1,19 +1,19 @@
 $ffmpeg = "ffmpeg-20190327-681957b"
-$dev32 = "$env:temp\$ffmpeg-win32-dev"
-$dev64 = "$env:temp\$ffmpeg-win64-dev"
-$shared32 = "$env:temp\$ffmpeg-win32-shared"
-$shared64 = "$env:temp\$ffmpeg-win64-shared"
+$dev32 = "$ffmpeg-win32-dev"
+$dev64 = "$ffmpeg-win64-dev"
+$shared32 = "$ffmpeg-win32-shared"
+$shared64 = "$ffmpeg-win64-shared"
 $wc = New-Object System.Net.WebClient
 
-if (!(Test-Path "$dev32.zip")) { $wc.DownloadFile("http://ffmpeg.zeranoe.com/builds/win32/dev/$dev32.zip", "$dev32.zip") }
-if (!(Test-Path "$dev64.zip")) { $wc.DownloadFile("http://ffmpeg.zeranoe.com/builds/win64/dev/$dev64.zip", "$dev64.zip") }
-if (!(Test-Path "$shared32.zip")) { $wc.DownloadFile("http://ffmpeg.zeranoe.com/builds/win32/shared/$shared32.zip", "$shared32.zip") }
-if (!(Test-Path "$shared64.zip")) { $wc.DownloadFile("http://ffmpeg.zeranoe.com/builds/win64/shared/$shared64.zip", "$shared64.zip") }
+if (!(Test-Path "$dev32.zip")) { $wc.DownloadFile("http://ffmpeg.zeranoe.com/builds/win32/dev/$dev32.zip", "$env:temp/$dev32.zip") }
+if (!(Test-Path "$dev64.zip")) { $wc.DownloadFile("http://ffmpeg.zeranoe.com/builds/win64/dev/$dev64.zip", "$env:temp/$dev64.zip") }
+if (!(Test-Path "$shared32.zip")) { $wc.DownloadFile("http://ffmpeg.zeranoe.com/builds/win32/shared/$shared32.zip", "$env:temp/$shared32.zip") }
+if (!(Test-Path "$shared64.zip")) { $wc.DownloadFile("http://ffmpeg.zeranoe.com/builds/win64/shared/$shared64.zip", "$env:temp/$shared64.zip") }
 
-if (!(Test-Path $dev32)) { Expand-Archive "$dev32.zip" -DestinationPath . }
-if (!(Test-Path $dev64)) { Expand-Archive "$dev64.zip" -DestinationPath . }
-if (!(Test-Path $shared32)) { Expand-Archive "$shared32.zip" -DestinationPath . }
-if (!(Test-Path $shared64)) { Expand-Archive "$shared64.zip" -DestinationPath . }
+if (!(Test-Path $dev32)) { Expand-Archive "$env:temp/$dev32.zip" -DestinationPath . }
+if (!(Test-Path $dev64)) { Expand-Archive "$env:temp/$dev64.zip" -DestinationPath . }
+if (!(Test-Path $shared32)) { Expand-Archive "$env:temp/$shared32.zip" -DestinationPath . }
+if (!(Test-Path $shared64)) { Expand-Archive "$env:temp/$shared64.zip" -DestinationPath . }
 
 Copy-Item "$dev32\examples\*.c" examples
 
