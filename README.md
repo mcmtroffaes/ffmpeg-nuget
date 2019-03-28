@@ -20,7 +20,7 @@ A prebuilt nuget package can be found [here](https://www.nuget.org/packages/FFmp
 
 All scripts for creating this nuget package are licensed under the
 conditions of the [MIT license](LICENSE.txt). For the examples in the
-[test](test) folder, see individual files for license details.
+[examples](examples) folder, see individual files for license details.
 
 Note that the official FFmpeg windows build incorporates parts that
 are covered by the GPLv3 license. Consequently, if you use this nuget
