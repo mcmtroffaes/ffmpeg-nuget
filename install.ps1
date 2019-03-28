@@ -1,8 +1,8 @@
 $ffmpeg = "ffmpeg-20190327-681957b"
-$dev32 = "$ffmpeg-win32-dev"
-$dev64 = "$ffmpeg-win64-dev"
-$shared32 = "$ffmpeg-win32-shared"
-$shared64 = "$ffmpeg-win64-shared"
+$dev32 = "$env:temp\$ffmpeg-win32-dev"
+$dev64 = "$env:temp\$ffmpeg-win64-dev"
+$shared32 = "$env:temp\$ffmpeg-win32-shared"
+$shared64 = "$env:temp\$ffmpeg-win64-shared"
 $wc = New-Object System.Net.WebClient
 
 if (!(Test-Path "$dev32.zip")) { $wc.DownloadFile("http://ffmpeg.zeranoe.com/builds/win32/dev/$dev32.zip", "$dev32.zip") }
