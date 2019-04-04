@@ -6,7 +6,7 @@
     <authors>FFmpeg</authors>
     <owners>Matthias C. M. Troffaes</owners>
     <projectUrl>https://ffmpeg.org/</projectUrl>
-    <license>GPL-3.0-or-later</license>
+    <license type="expression">GPL-3.0-or-later</license>
     <iconUrl>https://ffmpeg.org/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Headers, import libraries, and runtime dlls for FFmpeg, based on the official FFmpeg windows builds.</description>
