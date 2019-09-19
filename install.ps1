@@ -1,4 +1,4 @@
-$ffmpeg = "ffmpeg-20190909-976617c"
+$ffmpeg = "ffmpeg-20190918-c2ab998"
 $dev32 = "$ffmpeg-win32-dev"
 $dev64 = "$ffmpeg-win64-dev"
 $shared32 = "$ffmpeg-win32-shared"
