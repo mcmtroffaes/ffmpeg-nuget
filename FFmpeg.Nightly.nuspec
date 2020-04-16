@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>FFmpeg.Nightly</id>
-    <version>20200415.0.0</version>
+    <version>20200415.1.0</version>
     <authors>FFmpeg</authors>
     <owners>Matthias C. M. Troffaes</owners>
     <projectUrl>https://ffmpeg.org/</projectUrl>
