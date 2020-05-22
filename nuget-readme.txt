@@ -22,6 +22,6 @@ In the build\native\share\doc folder of this nuget package, you can find:
 
 For more information on FFmpeg's license, see:
 
-* https://git.ffmpeg.org/gitweb/ffmpeg.git/blob/b18fd2b:/LICENSE.md
+* https://git.ffmpeg.org/gitweb/ffmpeg.git/blob/38490cb:/LICENSE.md
 
 * https://ffmpeg.org/legal.html
