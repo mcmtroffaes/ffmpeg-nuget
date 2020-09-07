@@ -4,6 +4,8 @@ A nuget package containing headers, import libraries, and runtime dlls for FFmpe
 
 [![Build status](https://ci.appveyor.com/api/projects/status/vcsn0fpr5s1j6p2y/branch/master?svg=true)](https://ci.appveyor.com/project/mcmtroffaes/ffmpeg-nuget/branch/master)
 
+**I am planning to retire this nuget package from October 1st 2020 onward, since zeranoe is closing and will no longer be providing any builds. Visual Studio has nowadays excellent integration with vcpkg. Pre-built vcpkg archives are available from [ffmpeg-msvc-build](https://github.com/mcmtroffaes/ffmpeg-msvc-build/releases), or simply build ffmpeg yourself using vcpkg.**
+
 ## Requirements
 
 * [Nuget](https://www.nuget.org/)
